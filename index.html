@@ -2,14 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    1111
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>LineSam</span>
+		</div>
+		<div id="about">
+			<a href="#" title="Вoзможности" onclick="slowScroll('#main')">Возможности</a>
+			<a href="#" title="Преимущества" onclick="slowScroll('#overiew')">Преимущества</a>
+			<a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+			<a href="#" title="Ответы на вопросы" onclick="slowScroll('#fSaq')">FAQ</a>
+		</div>
+	</header>
+	<div id="top">
+		<h1>Программирование</h1>
+		<h3>Как способ жизни!</h3>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h2>Наши услуги помогут вам</h2>
+			<span>Большой выбор всего, что может вам пригодиться</span>
+		</div>
+		<div class="text">
+			<span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quae atque odio reprehenderit vero illo
+				officiis odit culpa soluta, minima quisquam pariatur enim dolore, itaque deleniti? Accusantium mollitia
+				doloremque molestias omnis quidem blanditiis adipisci, autem debitis a officia repellat velit numquam
+				non reprehenderit at quam? Id itaque quas ut expedita.</span>
+		</div>
+	</div>
+
+	<div id="overview">
+		<h2>Преимущества</h2>
+		<h4>С нами все проще</h4>
+
+		<div class="img">
+			<img src="https://itproger.com/img/courses/1663117401.jpg" alt="">
+			<span>Создание 3D игры на Unity</span>
+		</div>
+		<div class="img">
+			<img src="https://itproger.com/img/courses/1493626043.jpg" alt="">
+			<span>Уроки Blender 3D для новичков</span>
+		</div>
+		<div class="img">
+			<img src="https://itproger.com/img/courses/1648996051.jpg" alt="">
+			<span>Практика React JS / Разработка магазина</span>
+		</div>
+		<div class="img">
+			<img src="https://itproger.com/img/courses/1518607198.jpg" alt="">
+			<span>Создание игры на Python 3 c PyGame</span>
+		</div>
+	</div>
+
+	<div id="contacts">
+		<center>
+			<h5>Обратная связь</h5>
+		</center>
+		<form id="form_input">
+			<label for="name">Имя <span>*</span></label><br>
+			<input type="text" name="name" id="name" placeholder="Введите имя"><br>
+			<label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" name="email" id="email" placeholder="Введите email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea name="message" id="message" placeholder="Введите ваше сообщение"></textarea>
+			<div id="mess_send" class="btn">Отправить</div>
+		</form>
+	</div>
+
+	<div id="faq">
+		<div>
+			<span class="title">Оплата</span><br>
+			<span class="heading">Как будет проходить оплата?</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.
+			</p>
+			<span class="heading">Как будет проходить оплата?</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.</p>
+			<span class="heading">Как будет проходить оплата?</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.</p>
+		</div>
+		<div>
+			<span class="title">Информация</span><br>
+			<span class="heading">Что входит в услуги сервиса</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.
+			</p>
+			<span class="heading">Что входит в услуги сервиса</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.
+			</p>
+			<span class="heading">Что входит в услуги сервиса</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.</p>
+		</div>
+		<div>
+			<span class="title">Гарантии</span><br>
+			<span class="heading">Какие гарантии есть?</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.
+			</p>
+			<span class="heading">Какие гарантии есть?</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.</p>
+			<span class="heading">Какие гарантии есть?</span>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
+				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
+				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
+				aspernatur vitae dolorem atque corrupti neque eaque.</p>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>
+		function slowScroll(id) {
+			$("html, body").animate(
+				{
+					scrollTop: $(id).offset().top,
+				},
+				500
+			);
+		}
+
+		$(document).on("scroll", function () {
+			if ($(window).scrollTop() === 0) $("header").removeClass("fixed");
+			else $("header").attr("class", "fixed");
+		});
+	</script>
 </body>
 
 </html>
