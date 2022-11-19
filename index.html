@@ -16,8 +16,8 @@
 		</div>
 		<div id="about">
 			<a href="#" title="Вoзможности" onclick="slowScroll('#main')">Возможности</a>
-			<a href="#" title="Преимущества" onclick="slowScroll('#overiew')">Преимущества</a>
-			<a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+			<a href="#" title="Преимущества" onclick="slowScroll('#overview')">Преимущества</a>
+			<a href="#" title="Контакты" onclick="slowScroll('#form-wrapper')">Контакты</a>
 			<a href="#" title="Ответы на вопросы" onclick="slowScroll('#fSaq')">FAQ</a>
 		</div>
 	</header>
@@ -44,102 +44,118 @@
 		<h4>С нами все проще</h4>
 
 		<div class="img">
-			<img src="https://itproger.com/img/courses/1663117401.jpg" alt="">
+			<img src="images/unity.jpg" alt="">
 			<span>Создание 3D игры на Unity</span>
 		</div>
 		<div class="img">
-			<img src="https://itproger.com/img/courses/1493626043.jpg" alt="">
+			<img src="images/blemdet.jpg" alt="">
 			<span>Уроки Blender 3D для новичков</span>
 		</div>
 		<div class="img">
-			<img src="https://itproger.com/img/courses/1648996051.jpg" alt="">
+			<img src="images/react.jpg" alt="">
 			<span>Практика React JS / Разработка магазина</span>
 		</div>
 		<div class="img">
-			<img src="https://itproger.com/img/courses/1518607198.jpg" alt="">
+			<img src="images/py.jpg" alt="">
 			<span>Создание игры на Python 3 c PyGame</span>
 		</div>
 	</div>
 
-	<div id="contacts">
-		<center>
-			<h5>Обратная связь</h5>
-		</center>
-		<form id="form_input">
-			<label for="name">Имя <span>*</span></label><br>
-			<input type="text" name="name" id="name" placeholder="Введите имя"><br>
-			<label for="email">Ваша почта <span>*</span></label><br>
-			<input type="email" name="email" id="email" placeholder="Введите email"><br>
-			<label for="message">Сообщение <span>*</span></label><br>
-			<textarea name="message" id="message" placeholder="Введите ваше сообщение"></textarea>
-			<div id="mess_send" class="btn">Отправить</div>
+
+
+	<div id="form-wrapper">
+		<form id="mars-once" action="/apply/" method="POST">
+			<label>
+				<span class="input-title">Ваше имя:</span>
+				<input class="input" type="text" name="name" id="name" placeholder="Иван Иванов" required autofocus>
+			</label>
+
+			<label>
+				<span class="input-title">Почта:</span>
+				<input class="input" type="email" name="email" id="email" placeholder="ivanov@mail.ru" required>
+			</label>
+
+			<label>
+				<span class="input-title">Возраст:</span>
+				<input class="input" type="number" name="age">
+			</label>
+
+			<label>
+				<span class="input-title">Профессия:</span>
+				<div class="select-wrapper">
+					<select class="select" name="specialization" required>
+						<option value="engineer" selected>Инженер</option>
+						<option value="scientist">Учёный</option>
+						<option value="psychologist">Психолог</option>
+						<option value="other">Другая</option>
+					</select>
+				</div>
+			</label>
+
+			<!-- <label>
+				<span class="input-title">Я работал в NASA</span>
+				<div class="checkbox-wrapper">
+					<input class="checkbox" type="checkbox" name="nasa-experience" value="1">
+					<span class="checkbox-title"></span>
+				</div>
+			</label> -->
+			<label>
+				<span class="input-title">Фото:</span>
+				<input class="file-selector" type="file" accept="image/jpeg" name="photo" required>
+			</label>
+
+			<button class="button button-yellow" type="submit">Отправить заявку</button>
+			<div id="loader" class="hidden">Отправляем...</div>
 		</form>
 	</div>
 
-	<div id="faq">
-		<div>
-			<span class="title">Оплата</span><br>
-			<span class="heading">Как будет проходить оплата?</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.
-			</p>
-			<span class="heading">Как будет проходить оплата?</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.</p>
-			<span class="heading">Как будет проходить оплата?</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.</p>
-		</div>
-		<div>
-			<span class="title">Информация</span><br>
-			<span class="heading">Что входит в услуги сервиса</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.
-			</p>
-			<span class="heading">Что входит в услуги сервиса</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.
-			</p>
-			<span class="heading">Что входит в услуги сервиса</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.</p>
-		</div>
-		<div>
-			<span class="title">Гарантии</span><br>
-			<span class="heading">Какие гарантии есть?</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.
-			</p>
-			<span class="heading">Какие гарантии есть?</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.</p>
-			<span class="heading">Какие гарантии есть?</span>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis voluptatum veniam aliquam eius ea
-				qui nihil unde, sit quam dolores neque id veritatis ex odio modi magnam officiis. Doloremque vero
-				dolorem voluptatibus id placeat optio laborum corrupti incidunt, perspiciatis cupiditate quos. Ex
-				aspernatur vitae dolorem atque corrupti neque eaque.</p>
-		</div>
-	</div>
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script>
+
+		// FORM 
+		function serializeForm(formNode) {
+			const { elements } = formNode
+
+			const data = new FormData()
+
+			Array.from(elements)
+				.filter((item) => !!item.name)
+				.forEach((element) => {
+					const { name, type } = element
+					const value = type === 'checkbox' ? element.checked : element.value
+
+					data.append(name, value)
+				})
+			console.log(Array.from(data.entries()))
+
+			return data
+
+		}
+
+		function toggleLoader() {
+			const loader = document.getElementById('loader')
+			loader.classList.toggle('hidden')
+		}
+
+		async function handleFormSubmit(event) {
+			event.preventDefault()
+
+			const data = serializeForm(event.target)
+			// const response = await sendData(data)
+		}
+
+		function checkValidity(event) {
+			const formNode = event.target.form
+			const isValid = formNode.checkValidity()
+
+			formNode.querySelector('button').disabled = !isValid
+		}
+
+		const applicantForm = document.getElementById('mars-once')
+		applicantForm.addEventListener('input', checkValidity)
+		applicantForm.addEventListener('submit', handleFormSubmit)
+
+		//scroll
 		function slowScroll(id) {
 			$("html, body").animate(
 				{
